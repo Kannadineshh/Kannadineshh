@@ -1,0 +1,114 @@
+// Styles.css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent horizontal scrollbar */
+  animation: slideshow 40s infinite;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Specific Styles */
+.template-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.template {
+  margin-right: 20px;
+}
+
+.template img {
+  max-width: 200px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#customize-form {
+  margin-bottom: 20px;
+}
+
+#resume-preview {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Additional Customization Styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Background Slideshow */
+@keyframes slideshow {
+  0%, 100% {
+    background-image: url('background1.jpg');
+  }
+  25% {
+    background-image: url('background2.jpg');
+  }
+  50% {
+    background-image: url('background3.jpg');
+  }
+  75% {
+    background-image: url('background4.jpg');
+  }
+}
+
+/* Gradient Overlay */
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  z-index: -1;
+}
