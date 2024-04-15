@@ -1,0 +1,71 @@
+e//index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Resume Builder</h1>
+    <nav>
+      <ul>
+        <li><a href="#templates">Templates</a></li>
+        <li><a href="#customize">Customize</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="templates">
+      <h2>Choose a Template</h2>
+      <div class="template-list">
+        <!-- Templates will be dynamically added here -->
+      </div>
+    </section>
+
+    <section id="customize">
+      <h2>Customize Your Resume</h2>
+      <form id="customize-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="font">Select Font:</label>
+        <select id="font" name="font">
+          <option value="Arial">Arial</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Verdana">Verdana</option>
+        </select>
+
+        <label for="color">Select Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="layout">Select Layout:</label>
+        <select id="layout" name="layout">
+          <option value="one-column">One Column</option>
+          <option value="two-column">Two Column</option>
+          <option value="grid">Grid</option>
+        </select>
+
+        <label for="sections">Custom Sections:</label>
+        <textarea id="sections" name="sections" placeholder="Enter custom sections"></textarea>
+
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <button type="submit">Save Changes</button>
+      </form>
+      <div id="resume-preview">
+        <!-- Preview of customized resume will be shown here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Resume Builder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
